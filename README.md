@@ -45,7 +45,7 @@ export CHANNEL_TWO_PROFILE=Channel12
 
 Step 4: bring up all the containers, and you should see total 8 containers up and running
 ```
-docker-compose -f docker-compose.yaml up -d
+docker-compose up -d
 docker ps
 ```
 
@@ -130,7 +130,7 @@ If everything looks good, you now have a fabric network with 3 organizations set
 
 Step 7: clean up: always good practice for cleaning up stuff after testing
 ```
-docker-compose -f docker-compose-cli.yaml --volumes --remove-orphans
+docker-compose down -v
 docker rm $(docker ps -aq)
 docker rmi $(docker images dev-* -q)
 ```
