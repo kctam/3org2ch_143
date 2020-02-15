@@ -43,7 +43,7 @@ export CHANNEL_TWO_PROFILE=Channel12
 ../bin/configtxgen -profile ${CHANNEL_TWO_PROFILE} -outputAnchorPeersUpdate ./channel-artifacts/Org2MSPanchors_${CHANNEL_TWO_NAME}.tx -channelID $CHANNEL_TWO_NAME -asOrg Org2MSP
 ```
 
-Step 4: bring up all the containers, and you should see total 8 containers up and running
+Step 4: bring up all the containers, and you should see total 5 containers up and running
 ```
 docker-compose up -d
 docker ps
